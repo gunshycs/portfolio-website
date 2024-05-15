@@ -1,0 +1,68 @@
+#root {
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.superContainer {
+  margin: 0;
+}
+/* Header Stuff */
+.navbarItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeItem {
+  display: flex;
+  flex-grow: 3;
+}
+
+.headerContainer {
+
+  width: 100%;
+  height: 100%;
+  background-color: #537A5A; /* Background color of the navigation bar */
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px; /* Adjust the padding as needed */
+}
+
+/* Body Stuff */
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.heroImage{
+  border-radius: 50%;
+  width: 15vw;
+  height: auto;
+}
+.aboutContainer {
+  width: 25vmin;
+  padding: 20px;
+  margin: 20px;
+}

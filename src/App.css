@@ -52,6 +52,12 @@
 }
 
 /* Header Stuff */
+.logoImage {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50px; /* Set the desired width */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
 .navbarItems {
   display: flex;
   justify-content: center;
@@ -62,6 +68,8 @@
   display: flex;
   flex-grow: 3;
 }
+
+
 
 .headerContainer {
   width: 100%;
@@ -193,6 +201,17 @@ a {
   color: #909590;
   font-weight: bold;
   letter-spacing: 0.2px;
+}
+
+.navItem-home {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  margin: 1px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .navItem:hover {

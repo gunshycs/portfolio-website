@@ -7,6 +7,7 @@ import cg from "./assets/cg.png";
 import cg2 from "./assets/cg2.png";
 import cg3 from "./assets/cg3.png";
 import cg4 from "./assets/cg4.png";
+import logo from "./assets/logo.png";
 import "./App.css";
 
 import "slick-carousel/slick/slick.css";
@@ -124,8 +125,8 @@ function App() {
         <nav className="navBar header">
           <ul className="navbarItems">
             <li className="homeItem">
-              <a href="/" className="navItem">
-                Christian Sanchez
+              <a href="/" className="navItem-home">
+                <img className='logoImage'src={logo} alt="Christian Sanchez" /> Christian Sanchez
               </a>
             </li>
             <li className="item">

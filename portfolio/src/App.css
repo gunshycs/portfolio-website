@@ -7,6 +7,50 @@
 .superContainer {
   margin: 0;
 }
+
+/* Modal */
+
+/* Add this CSS to your App.css file */
+.modalContainer {
+  display: block; /* Ensure the modal is displayed */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+.modalContent {
+  background-color: #444946;
+  margin: 15% auto; /* Center modal on screen */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 10%;
+}
+
+.closeButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .modalContent {
+    width: 90%;
+  }
+}
+
 /* Header Stuff */
 .navbarItems {
   display: flex;
@@ -20,12 +64,11 @@
 }
 
 .headerContainer {
-
   width: 100%;
   height: 100%;
-  background-color: #537A5A; /* Background color of the navigation bar */
+  background-color: #1b1d1c; /* Background color of the navigation bar */
+  box-shadow: 10px 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
-
 
 ul {
   list-style-type: none;
@@ -47,7 +90,163 @@ a {
 /* Body Stuff */
 .bodyContainer {
   display: flex;
+  width: 95%; /* Adjust width of container as needed */
+  height: 80vmin; /* Adjust height of container as needed */
+  background-image: url('./assets/bg9.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: container;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.heroSection {
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  border-radius: 10px;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  border-radius: 10px;
+}
+
+.heroImage {
+  border-radius: 50%;
+  width: 15vw;
+  height: auto;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+}
+.aboutContainer {
+  width: 25vmin;
+  padding: 20px;
+  margin: 20px;
+  background-color: #1b1d1c;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+}
+
+.connectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.vectorIconsRef {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5%;
+  background-color: #1b1d1c;
+  padding: 20px;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.vectorIconsRef:not(:last-child) {
+  margin-right: 30px; /* Adjust the value to set the desired gap */
+}
+
+.vectorIcons {
+  padding: 0;
+  margin: 0;
+}
+.socialContainer {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+a {
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.vectorIconsRef:hover {
+  background-color: #9AE19D; /* Color to transition to on hover */
+}
+
+
+
+.navItem {
+  color: #909590;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.navItem:hover {
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.navItem:hover {
+  color: #9AE19D; /* Color to transition to on hover */
+}
+
+.sectionText {
+  color: #909590;
+}
+
+/* About Me Container */
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.aboutMeTextContainer {
+  display: flex;
+  width: 50%;
+  margin-top: 60px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1d1c;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.techStackContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+[class^="devicon-"]  {
+  margin: 10px;
+  font-size: 50px;
+}
+
+
+/* Content Container */
+.contentContainer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -55,14 +254,77 @@ a {
   margin: 20px;
   border-radius: 10px;
 }
+.projectName{
+  background-color: #1b1d1c;
+  border-radius: 5%;
+  border-radius: 10px;
+  color: #9AE19D; /* Color to transition to on hover */
 
-.heroImage{
-  border-radius: 50%;
-  width: 15vw;
-  height: auto;
+
 }
-.aboutContainer {
-  width: 25vmin;
-  padding: 20px;
-  margin: 20px;
+
+.projectImage {
+  width: 800px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.projectImagecg {
+  width: 200px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.projectContainer {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth transition */
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1d1c;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.projectContainer {
+  margin-bottom: 30px;
+}
+
+.projectDescriptionContainer {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 10px;
+}
+.projectDescriptionTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+.projectName {
+  font-size: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -126,7 +126,7 @@ function App() {
         <nav className="navBar header">
           <ul className="navbarItems">
             <li className="homeItem">
-              <a href="/" className="navItem-home">
+              <a href="index.html" className="navItem-home">
                 <img className='logoImage'src={logo} alt="Christian Sanchez" /> Christian Sanchez
               </a>
             </li>

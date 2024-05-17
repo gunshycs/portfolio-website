@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import csPicture from "./assets/senior.jpg";
+import me from './assets/me.png'
 import bgImage from "./assets/bg.jpg";
 import Slider from "react-slick";
 import yummy from "./assets/yummy.png";
